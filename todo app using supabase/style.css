@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+    width: 45%;
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.input-box {
+    display: flex;
+    gap: 4px;
+}
+
+input {
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    flex: 1;
+}
+
+.add-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #00d084;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.deleteAll-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ef4444;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p {
+    margin: 15px 0;
+    color: white;
+}
+
+.task-parent {
+    margin-bottom: 10px;
+}
+
+.task-box {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.task-box textarea {
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 5px 5px;
+    background-color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+.update-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #00d084;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ef4444;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* 
+@media (max-width: 768px) {
+
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 90%;
+    }
+} */
+
+
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 70%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .container h1 {
+        font-size: 26px;
+    }
+
+    .input-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .task-box {
+        flex-direction: column;
+    }
+
+    .add-btn,
+    .deleteAll-btn,
+    .update-btn,
+    .delete-btn {
+        width: 100%;
+    }
+
+    textarea {
+        min-height: 60px;
+    }
+}
