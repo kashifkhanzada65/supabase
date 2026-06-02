@@ -4,6 +4,7 @@ const PROJECT_KEY = 'sb_publishable_s-aHRNhlx1EKW8z2ArQMrQ_FJ1Tq2Rf';
 
 const input = document.querySelector(".input-box input");
 const task_parent = document.querySelector(".task-parent");
+const para = document.getElementById('para');
 let counter = 0;
 
 
@@ -24,7 +25,7 @@ const dataCall = async () => {
         .from("todos")
         .insert(data)
         .select()
-        
+
     input.value = "";
     addTodo()
 }
@@ -37,7 +38,7 @@ const addTodo = async () => {
 
     task_parent.innerHTML = '';
     counter = data.length;
-    document.querySelector('p').innerHTML = `Total task: ${counter}`;
+    para.innerHTML = `Total task: ${counter}`;
 
     data.forEach((element) => {
         task_parent.innerHTML += ` 
