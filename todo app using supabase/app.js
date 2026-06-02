@@ -24,7 +24,7 @@ const dataCall = async () => {
         .from("todos")
         .insert(data)
         .select()
-
+        
     input.value = "";
     addTodo()
 }
@@ -90,8 +90,8 @@ const delAll = async () => {
 
 
 
-window.dataCall = dataCall
-window.del = del
-window.update = update
-window.delAll = delAll
+window.dataCall = dataCall;
+window.del = del;
+window.update = update;
+window.delAll = delAll;
 addTodo();
