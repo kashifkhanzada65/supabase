@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+
+nav {
+
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    box-shadow: 0 5px 20px #ddd;
+
+}
+
+
+.logo {
+
+    font-size: 30px;
+    color: #2563eb;
+
+}
+
+
+.logo span {
+
+    color: #111;
+
+}
+
+
+ul {
+
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+}
+
+
+ul li {
+
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+
+
+button {
+
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+
+.login {
+
+    background: white;
+    border: 1px solid #2563eb;
+}
+
+.login a{
+ color: black;
+ text-decoration: none;
+}
+
+.signup a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.signup,
+.search button,
+.card button,
+.seller button {
+
+    background: #2563eb;
+    color: white;
+
+}
+
+
+
+
+
+.hero {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 80px;
+
+}
+
+
+
+.hero-text {
+
+    max-width: 600px;
+
+}
+
+
+.hero h1 {
+
+    font-size: 55px;
+    line-height: 1.2;
+
+}
+
+
+.hero p {
+
+    margin: 20px 0;
+    font-size: 18px;
+    color: #555;
+
+}
+
+
+
+.search {
+
+    display: flex;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #ddd;
+
+}
+
+
+
+.search input {
+
+    width: 350px;
+    border: none;
+    outline: none;
+    padding: 15px;
+
+}
+
+
+
+.hero-card {
+
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #ddd;
+
+}
+
+
+.hero-card h2 {
+
+    color: #2563eb;
+    font-size: 35px;
+
+}
+
+
+
+.services {
+
+    padding: 50px;
+    text-align: center;
+
+}
+
+
+
+.cards {
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+
+}
+
+
+
+.card {
+
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px #ddd;
+
+}
+
+
+.card p {
+
+    margin: 20px;
+
+}
+
+
+
+
+.seller {
+
+    background: #2563eb;
+    color: white;
+    padding: 70px;
+    text-align: center;
+
+}
+
+
+.seller h1 {
+
+    font-size: 40px;
+
+}
+
+
+
+footer {
+
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+}
+
+
+
+/* Authentication Pages */
+
+
+.auth-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #f5f7fb;
+
+}
+
+
+
+.auth-box {
+
+    width: 400px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 35px #ddd;
+
+    text-align: center;
+
+}
+
+
+
+.auth-box h1 {
+
+    font-size: 35px;
+
+    color: #2563eb;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.auth-box h1 span {
+
+    color: #111;
+
+}
+
+
+
+.auth-box h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.auth-box p {
+
+    color: #666;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.auth-box form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+
+.auth-box input,
+.auth-box select {
+
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+}
+
+
+
+.auth-box input:focus,
+.auth-box select:focus {
+
+    border-color: #2563eb;
+
+}
+
+
+
+.auth-box button {
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 15px;
+
+    font-size: 16px;
+
+}
+
+
+
+.switch {
+
+    margin-top: 25px;
+
+}
+
+
+
+.switch a {
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+
+@media(max-width:500px) {
+
+    .auth-box {
+
+        width: 90%;
+
+    }
+
+}
+
+
+
+@media(max-width:900px) {
+
+    .hero,
+    .cards {
+
+        flex-direction: column;
+
+    }
+
+
+    nav ul {
+
+        display: none;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+}
