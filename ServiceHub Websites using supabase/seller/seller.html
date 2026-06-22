@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceHub - Seller Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        /* TOP BAR */
+        .topbar {
+            background: #111;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+        }
+
+        .logo {
+            color: #00d084;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* DASHBOARD */
+        .container {
+            width: 90%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        /* STATS */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .box h2 {
+            margin: 0;
+            color: #00a86b;
+        }
+
+        /* UPLOAD SECTION */
+        .upload {
+            background: white;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background: #0077ff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #005fd1;
+        }
+
+        /* GIG LIST */
+        .gigs {
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            color: #00a86b;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="logo">ServiceHub Seller</div>
+        <div>Dashboard</div>
+    </div>
+
+    <div class="container">
+
+        <!-- STATS -->
+        <div class="stats">
+            <div class="box">
+                <h2>12</h2>
+                <p>Total Gigs</p>
+            </div>
+
+            <div class="box">
+                <h2>$320</h2>
+                <p>Earnings</p>
+            </div>
+
+            <div class="box">
+                <h2>8</h2>
+                <p>Orders</p>
+            </div>
+
+            <div class="box">
+                <h2>4.8★</h2>
+                <p>Rating</p>
+            </div>
+        </div>
+
+        <!-- UPLOAD GIG -->
+        <div class="upload">
+            <h3>Create New Gig</h3>
+
+            <label>Gig Media</label>
+            <input type="text" placeholder="e.g. picture, vider, pdf">
+
+            <label>Gig Title</label>
+            <input type="text" placeholder="e.g. I will design modern website">
+
+            <label>Description</label>
+            <textarea rows="4" placeholder="Describe your service..."></textarea>
+
+            <label>Price ($)</label>
+            <input type="number" placeholder="Enter price">
+
+            <button class="btn">Publish Gig</button>
+        </div>
+
+        <!-- GIG LIST -->
+        <div class="gigs">
+
+            <div class="card">
+                <div>
+                    <h3>Website Design</h3>
+                    <p>Modern responsive website</p>
+                </div>
+                <div class="price">$25</div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Logo Design</h3>
+                    <p>Professional brand logo</p>
+                </div>
+                <div class="price">$10</div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Video Editing</h3>
+                    <p>YouTube & Shorts editing</p>
+                </div>
+                <div class="price">$15</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -27,26 +27,24 @@
             <p>Login to continue your journey</p>
 
 
-            <form>
+
+            <input id="emailLogin" class="input-box" type="email" placeholder="Email Address">
 
 
-                <input type="email" placeholder="Email Address">
+            <input id="passwordLogin" type="password" placeholder="Password">
 
 
-                <input type="password" placeholder="Password">
+            <button onclick="loginHandler()">
+                Login
+            </button>
 
 
-                <button>
-                    Login
-                </button>
 
-
-            </form>
 
 
             <p class="switch">
                 Don't have an account?
-                <a href="../signUp/signup.html">
+                <a href="../auth/signup.html">
                     Create Account
                 </a>
             </p>
@@ -58,7 +56,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script type="module" src="login.js"></script>
+    <script type="module" src="auth.js"></script>
 </body>
 
 </html>

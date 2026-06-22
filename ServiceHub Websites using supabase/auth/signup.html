@@ -34,37 +34,37 @@
 
 
 
-            
 
 
-                <input id="fullName" type="text" placeholder="Full Name">
+
+            <input id="fullName" type="text" placeholder="Full Name">
 
 
-                <input id="email" type="email" placeholder="Email Address">
+            <input id="email" type="email" placeholder="Email Address">
 
 
-                <input id="password" type="password" placeholder="Create Password">
+            <input id="password" type="password" placeholder="Create Password">
 
 
-                <select id="userService">
+            <select id="userService">
 
-                    <option>
-                        I am a Buyer
-                    </option>
+                <option>
+                    Buyer
+                </option>
 
-                    <option>
-                        I am a Seller
-                    </option>
+                <option>
+                    Seller
+                </option>
 
-                </select>
-
-
-                <button onclick="signUpNewUser()">
-                    Sign Up
-                </button>
+            </select>
 
 
-            
+            <button onclick="signUpNewUser()">
+                Sign Up
+            </button>
+
+
+
 
 
 
@@ -72,7 +72,7 @@
 
                 Already have an account?
 
-                <a href="../login/login.html">
+                <a href="../auth/login.html">
                     Login
                 </a>
 
@@ -86,7 +86,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script  type="module" src="signup.js"></script>
+    <script type="module" src="auth.js"></script>
 </body>
 
 </html>
